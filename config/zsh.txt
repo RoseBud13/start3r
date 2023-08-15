@@ -1,0 +1,15 @@
+# start3r command line aliases and functions
+# ~/space-work/start3r
+# alias start3rping="~/space-work/start3r/shell/ping.sh"
+
+start3r() {
+ if [[ $1 = "ping" ]]
+ then
+  ~/space-work/start3r/shell/ping.sh
+ elif [[ $1 = "initgit" ]]
+ then
+  ~/space-work/start3r/shell/initgit.sh
+ else
+  echo "hi this is a starter kit shell\npass an argument like 'initgit' to init a git repo"
+ fi
+}
